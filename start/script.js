@@ -1,11 +1,12 @@
 let answers = [];
+let questions = [
+    'What is your name?',
+    'What is your surname?',
+    'How old are you?'
+];
 
-answers[0] = prompt('What is your name?', '');
-answers[1] = prompt('What is your surname?', '');
-answers[2] = prompt('How old are you?', '');
+for(let i = 0; i < questions.length; i++) {
+    answers[i] = prompt(questions[i], '');
+}
 
 document.write(answers);
-
-for(let i = 0; i < 10; i++) {
-    console.log(i);
-}
